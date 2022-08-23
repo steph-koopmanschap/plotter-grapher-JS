@@ -14,7 +14,7 @@ myGraph = new Graph("add your graph title here");
 ```
 
 by default the graph will be 500 pixels in width and height.
-You can mage the graph bigger by initializing it with a different size.
+You can make the graph bigger by initializing it with a different size.
 ```
 myGraph = new Graph("add your graph title here", 800, 600);
 ```
@@ -97,7 +97,7 @@ for (let x = lowerLimit; x < upperLimit; x += step) { {
 
 ## Extra features
 
-You can use the "+" and "-" buttons the zoom in and out of the graph.
+You can use the "+" and "-" buttons to zoom in and out of the graph.
 You can also use the arrow keys to move the graph up, down, and sideways.
 However there is a bug where this functionality does not work at the moment.
 
