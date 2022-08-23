@@ -9,34 +9,46 @@ This is a simple class that creates a graph in your HTML document.
 
 First initialize the graph.
 
-`myGraph = new Graph("add your graph title here");`
+```
+myGraph = new Graph("add your graph title here");
+```
 
 by default the graph will be 500 pixels in width and height.
 You can mage the graph bigger by initializing it with a different size.
-`myGraph = new Graph("add your graph title here", 800, 600);`
+```
+myGraph = new Graph("add your graph title here", 800, 600);
+```
 
 ## Adding plots
 
 To add a plot write
-`myGraph.addPlot("your plot title", dataX, dataY, plot_color);`
+```
+myGraph.addPlot("your plot title", dataX, dataY, plot_color);
+```
 dataX is an array of your X values.
 dataY is an array of your Y value.
 plot_color can by any valid HTML color.
 
 You can also create a 2D array that contains your X and Y data and then seperate it out in the parameters.
 For example
-`const data = [dataX, dataY];`
-`myGraph.addPlot("your plot title", data[0], data[1], plot_color);`
+```
+const data = [dataX, dataY];
+myGraph.addPlot("your plot title", data[0], data[1], plot_color);
+```
 you could also use an object.
 For example:
-`const data = {x: dataX, y: dataY};`
-`myGraph.addPlot("your plot title", data.x, data.y, plot_color);`
+```
+const data = {x: dataX, y: dataY};
+myGraph.addPlot("your plot title", data.x, data.y, plot_color);
+```
 
 Finally can switch between to types of graphs.
 A line graph. and an individual disconnected point graph by adding an extra parameter.
 By default the graph is always a line graph, when the last parameter is not given.
-`myGraph.addPlot("your plot title", dataX, dataY, plot_color, "line");`
-`myGraph.addPlot("your plot title", dataX, dataY, plot_color, "circle");`
+```
+myGraph.addPlot("your plot title", dataX, dataY, plot_color, "line");
+myGraph.addPlot("your plot title", dataX, dataY, plot_color, "circle");
+```
 
 You can add any data points you want, as long as the x and y data arrays are the same size.
 
