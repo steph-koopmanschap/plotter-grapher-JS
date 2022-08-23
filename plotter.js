@@ -50,7 +50,7 @@ class Graph {
         this.minX = -(width * 0.5);
         this.minY = -(height * 0.5);
         this.maxX = (width * 0.5);
-        this.maxY = -(height * 0.5);
+        this.maxY = (height * 0.5);
         this.offsetX = 0;
         this.offsetY = 0;
         //How far in or far out the graph is zoomed
@@ -64,7 +64,6 @@ class Graph {
         this.drawGrid(1);
 
         //Add event listener to the graph for handling user input
-        //window.addEventListener("keyup", this.handleZoom(e).bind(e));
         window.addEventListener("keyup", (e) => {
             this.handleUserInput(e);
         });
